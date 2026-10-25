@@ -1,0 +1,12 @@
+name: Print course code
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-course-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the course code
+        run: echo "OSLLM-101"
